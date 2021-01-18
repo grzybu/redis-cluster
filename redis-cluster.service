@@ -1,0 +1,10 @@
+[Unit]
+Description=Redis cluster
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/redis-create-cluster
+
+[Install]
+WantedBy=multi-user.target
